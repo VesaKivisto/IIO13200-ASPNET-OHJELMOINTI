@@ -18,11 +18,11 @@ public partial class WindowPriceCalculator : System.Web.UI.Page
         try
         {
             lblError.Text = "";
-            //Convert cm to meters
-            double windowWidth = double.Parse(txtWindowWidth.Text) / 100;
-            double windowHeight = double.Parse(txtWindowHeight.Text) / 100;
-            double frameWidth = double.Parse(txtFrameWidth.Text) / 100;
-            txtArea.Text = CalculateWindowArea(windowWidth, windowHeight).ToString();
+            //Convert mm to meters
+            double windowWidth = double.Parse(txtWindowWidth.Text) / 1000;
+            double windowHeight = double.Parse(txtWindowHeight.Text) / 1000;
+            double frameWidth = double.Parse(txtFrameWidth.Text) / 1000;
+            txtArea.Text = CalculateWindowArea(windowWidth, windowHeight, frameWidth).ToString();
             txtPerimeter.Text = CalculatePerimeter(windowWidth, windowHeight).ToString();
             txtCost.Text = CalculateCosts(windowWidth, windowHeight, frameWidth).ToString();
         }
@@ -35,7 +35,7 @@ public partial class WindowPriceCalculator : System.Web.UI.Page
         }
     }
 
-    private double CalculateWindowArea(double width, double height)
+    private double CalculateWindowArea(double width, double height, double frame)
     {
         double area = width * height;
         return area;
@@ -53,9 +53,9 @@ public partial class WindowPriceCalculator : System.Web.UI.Page
         double squarePrice = double.Parse(ConfigurationManager.AppSettings["squarePrice"]);
         double framePrice = double.Parse(ConfigurationManager.AppSettings["framePrice"]);
         double workCost = double.Parse(ConfigurationManager.AppSettings["workCost"]);
-        double windowCost = CalculateWindowArea(width, height) * squarePrice;
+        double windowCost = CalculateWindowArea(width, height, frame) * squarePrice;
         double frameCost = CalculatePerimeter(width, height) * framePrice;
-        double costs = (1 + salesMargin / 100) * (windowCost + frameCost + workCost);
+        double costs = (1 + salesMargin) * (windowCost + frameCost + workCost);
         return costs;
     }    
 }
