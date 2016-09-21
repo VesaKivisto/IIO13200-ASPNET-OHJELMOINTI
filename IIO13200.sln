@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Saitti", "Saitti\", "{3E07E2B3-CB80-4885-B897-D2149243510F}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -24,7 +24,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Saitti", "Saitti\", "{3E07E
 		SlnRelativePath = "Saitti\"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise1(1)", "Exercise1\", "{09300DE0-A0B5-4A35-A262-E6DA9557B6DA}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise1(3)", "Exercise1\", "{09300DE0-A0B5-4A35-A262-E6DA9557B6DA}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_6847"
@@ -44,6 +44,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise1(1)", "Exercise1\"
 		VWDPort = "6847"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise2", "Exercise2\", "{8ECE3E85-B4D3-4191-9E03-1521B3F60A09}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61009"
+		Debug.AspNetCompiler.PhysicalPath = "Exercise2\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61009\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61009"
+		Release.AspNetCompiler.PhysicalPath = "Exercise2\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61009\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61009"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +79,10 @@ Global
 		{09300DE0-A0B5-4A35-A262-E6DA9557B6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09300DE0-A0B5-4A35-A262-E6DA9557B6DA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{09300DE0-A0B5-4A35-A262-E6DA9557B6DA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8ECE3E85-B4D3-4191-9E03-1521B3F60A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECE3E85-B4D3-4191-9E03-1521B3F60A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECE3E85-B4D3-4191-9E03-1521B3F60A09}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECE3E85-B4D3-4191-9E03-1521B3F60A09}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
