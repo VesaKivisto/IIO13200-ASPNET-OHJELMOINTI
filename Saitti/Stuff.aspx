@@ -49,7 +49,7 @@
         <div class="w3-container w3-half">
             <asp:GridView ID="gvStuff" runat="server" DataSourceID="SqlDataSource2" AutoGenerateColumns="false" OnSelectedIndexChanged="gvStuff_SelectedIndexChanged">
                 <Columns>
-                    <asp:ButtonField DataTextField="id" HeaderText="ID" />
+                    <asp:ButtonField DataTextField="id" HeaderText="ID" CommandName="select" />
                     <asp:BoundField DataField="name" HeaderText="Name" />
                     <asp:BoundField DataField="description" HeaderText="Description" />
                 </Columns>
@@ -57,11 +57,12 @@
         </div>
         <!-- Right side is for modifying selected row -->
         <div class="w3-container w3-half">
-            <h2 class="w3-container w3-blue">Selected:</h2>
-            <asp:Literal ID="myStuff" runat="server"></asp:Literal>
-            <asp:DetailsView ID="dvStuff" runat="server" DataSourceID="SqlDataSource2">
+            <h2 class="w3-container w3-blue">Valittu:
+                 <asp:Literal ID="myStuff" runat="server" /> </h2>
+            <asp:DetailsView ID="dvStuff" runat="server"
+                DataSourceID="SqlDataSource2">
                 <Fields>
-                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="true" />
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                 </Fields>
             </asp:DetailsView>
         </div>
