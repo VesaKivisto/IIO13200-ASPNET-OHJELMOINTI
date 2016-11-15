@@ -24,7 +24,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Saitti", "Saitti\", "{3E07E
 		SlnRelativePath = "Saitti\"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise1(3)", "Exercise1\", "{09300DE0-A0B5-4A35-A262-E6DA9557B6DA}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise1", "Exercise1\", "{09300DE0-A0B5-4A35-A262-E6DA9557B6DA}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_6847"
@@ -199,6 +199,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise7", "Exercise7\", "
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise5", "Exercise5\", "{DB26ECBE-0B01-4160-AEE2-C14225E8C9A9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_42159"
+		Debug.AspNetCompiler.PhysicalPath = "Exercise5\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_42159\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_42159"
+		Release.AspNetCompiler.PhysicalPath = "Exercise5\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_42159\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "42159"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -241,6 +262,10 @@ Global
 		{A60D4868-9CFA-4192-A792-AA2219C81550}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A60D4868-9CFA-4192-A792-AA2219C81550}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{A60D4868-9CFA-4192-A792-AA2219C81550}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{DB26ECBE-0B01-4160-AEE2-C14225E8C9A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB26ECBE-0B01-4160-AEE2-C14225E8C9A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB26ECBE-0B01-4160-AEE2-C14225E8C9A9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB26ECBE-0B01-4160-AEE2-C14225E8C9A9}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
